@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fundación 2045 — Panel de Sitios</title>
+<style>
+  :root{
+    --bg:#0a0d12;
+    --surface:#12161f;
+    --surface-2:#171c27;
+    --border:#232a3a;
+    --text:#eef1f6;
+    --text-dim:#8a93a8;
+    --text-faint:#5b6478;
+    --teal:#37e8c4;
+    --blue:#6c8ef5;
+    --coral:#f0805a;
+    --violet:#b98af0;
+    --amber:#f2c94c;
+    --rose:#f27ab2;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  .site-card{transition:border-color .15s ease;}
+  .site-card:hover{border-color:var(--card-accent, var(--teal));}
+  .url-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;}
+  .card-row{scrollbar-width:thin;scrollbar-color:var(--border) transparent;}
+  .card-row::-webkit-scrollbar{height:8px;}
+  .card-row::-webkit-scrollbar-thumb{background:var(--border);border-radius:999px;}
+  .wrap{width:100%;min-height:100vh;background:var(--bg);padding:56px 64px 80px;display:flex;flex-direction:column;gap:48px;}
+  @media (max-width:640px){ .wrap{padding:32px 20px 56px;gap:36px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap;">
+      <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal);">Fundación 2045</div>
+      <div style="font-size: 13px; color: var(--text-faint);">·</div>
+      <div style="font-size: 13px; color: var(--text-dim);">Panel de sitios activos</div>
+    </div>
+    <h1 style="margin: 0; font-size: 40px; font-weight: 700; color: var(--text); letter-spacing: -0.01em;">Todas las herramientas, en un solo lugar</h1>
+    <div style="font-size: 16px; color: var(--text-dim); max-width: 640px; line-height: 1.5;">19 sitios propios desplegados en Netlify — motor económico, monitoreo de IA, salud y seguimiento del TOC, meta-sistema, monitoreo legal y presencia profesional.</div>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">
+      <div style="display: flex; align-items: baseline; gap: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 8px 18px;">
+        <span style="font-size: 18px; font-weight: 700; color: var(--text);">19</span>
+        <span style="font-size: 13px; color: var(--text-dim);">sitios</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 8px 18px;">
+        <span style="font-size: 18px; font-weight: 700; color: var(--text);">6</span>
+        <span style="font-size: 13px; color: var(--text-dim);">categorías</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 8px 18px;">
+        <span style="font-size: 18px; font-weight: 700; color: var(--text);">56,050</span>
+        <span style="font-size: 13px; color: var(--text-dim);">viajes totales</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 8px 18px;">
+        <span style="width: 8px; height: 8px; border-radius: 999px; background: var(--teal); display: inline-block;"></span>
+        <span style="font-size: 13px; color: var(--text-dim);">Todos operativos en Netlify</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: MOTOR ECONOMICO -->
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 22px;">🚗</span>
+      <h2 style="margin: 0; font-size: 22px; font-weight: 700; color: var(--text);">Motor Económico</h2>
+      <span style="font-size: 13px; color: var(--text-faint);">Uber · Didi · finanzas</span>
+    </div>
+    <div class="card-row" style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 12px;">
+
+      <a class="site-card" href="https://deft-pasca-73fde6.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--teal); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">📊</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">17 ago</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Viajes</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Contador de viajes Uber, Didi y taxi histórico — estadísticas diarias, semanales y mensuales con exportación CSV.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--teal); margin-top: auto; padding-top: 8px;">deft-pasca-73fde6.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://f2045-motor.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--teal); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">💰</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">31 ago</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Motor Económico</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Registro de ingresos y gastos por categoría — Uber, hogar, salud, esposa, crédito e inversión, con resumen mensual y anual.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--teal); margin-top: auto; padding-top: 8px;">f2045-motor.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://ephemeral-mousse-c4ed88.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--teal); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">🔁</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">15 sep</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Reposición Uber</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Checklist de 30 días para marcar jornadas repuestas — progreso visual y respaldo de datos.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--teal); margin-top: auto; padding-top: 8px;">ephemeral-mousse-c4ed88.netlify.app</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- SECTION: RADAR IA / MONITOREO -->
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 22px;">📡</span>
+      <h2 style="margin: 0; font-size: 22px; font-weight: 700; color: var(--text);">Radar IA &amp; Procesos</h2>
+      <span style="font-size: 13px; color: var(--text-faint);">Monitoreo de ecosistema y flujos operativos</span>
+    </div>
+    <div class="card-row" style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 12px;">
+
+      <a class="site-card" href="https://grand-platypus-a7bb26.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--blue); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">🧭</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">28 jul</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Radar IA</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Directorio de fuentes — blogs, papers y newsletters organizados en 8 sectores del ecosistema de IA.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--blue); margin-top: auto; padding-top: 8px;">grand-platypus-a7bb26.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://comfy-bienenstitch-b46322.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--blue); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">⚙️</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">4 sep</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Procesos F2045</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Documentación de los 7 procesos operativos — Radar IA, CORPUS, Monitor SCJN, Captura de Ideas, Integración LLM y más.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--blue); margin-top: auto; padding-top: 8px;">comfy-bienenstitch-b46322.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://deft-strudel-060da5.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--blue); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">📚</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">28 sep</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">CORPUS — Directorio de Fuentes</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Índice de 34 fuentes guardadas en la carpeta CORPUS del teléfono, clasificadas por tipo y accesibilidad (directa o por enlace/búsqueda).</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--blue); margin-top: auto; padding-top: 8px;">deft-strudel-060da5.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://steady-banoffee-65241d.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--blue); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">🔗</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">28 sep</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Enlaces F2045</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Accesos directos del celular organizados en 4 carpetas: Derecho, Finanzas-Inversión, SAT y Chrome — 29 enlaces en total.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--blue); margin-top: auto; padding-top: 8px;">steady-banoffee-65241d.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://tranquil-kashata-1fceae.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--blue); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">🛰️</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">29 sep</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Enlaces — Espacio &amp; Astronomía</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Enlaces de referencia astronómicos y de seguimiento satelital, agrupados por nivel de confirmación (confirmadas, seguras, sin confirmar).</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--blue); margin-top: auto; padding-top: 8px;">tranquil-kashata-1fceae.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://silly-sunshine-0777df.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--blue); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">🌐</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">29 sep</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Hosting Estático — Netlify y Alternativas</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Directorio de referencia con Netlify y 5 alternativas de hosting estático (Vercel, Cloudflare Pages, GitHub Pages, Render, Surge.sh).</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--blue); margin-top: auto; padding-top: 8px;">silly-sunshine-0777df.netlify.app</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- SECTION: SALUD / TOC -->
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 22px;">🧠</span>
+      <h2 style="margin: 0; font-size: 22px; font-weight: 700; color: var(--text);">Salud &amp; Umbral TOC</h2>
+      <span style="font-size: 13px; color: var(--text-faint);">Desescalada Analítica Cognitiva</span>
+    </div>
+    <div class="card-row" style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 12px;">
+
+      <a class="site-card" href="https://astonishing-froyo-95e7e5.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--coral); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">⏱️</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">27 jul</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Rutina de Descanso</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Comparación entre la rutina actual y una sugerida, según el nivel del umbral TOC en cada franja del día.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--coral); margin-top: auto; padding-top: 8px;">astonishing-froyo-95e7e5.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://serene-lamington-6faedf.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--coral); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">🗺️</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">27 jul</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Sistema Integrado</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Mapa orbital y lineal de todo F2045, organizado alrededor del umbral de tolerancia a la fricción.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--coral); margin-top: auto; padding-top: 8px;">serene-lamington-6faedf.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://mellow-manatee-e1669b.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--coral); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">📈</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">27 jul</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Mapa del Umbral TOC</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Versión detallada del mapa anterior, con porcentaje de avance por área — tratamiento, sueño, cuerpo, social.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--coral); margin-top: auto; padding-top: 8px;">mellow-manatee-e1669b.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://peaceful-blancmange-dfd05d.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--coral); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">📝</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">3 jun</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Monitor Integral</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Formulario diario — signos vitales, carga cognitiva, intensidad TOC y detonadores. Exporta a CSV, JSON y nodo Obsidian.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--coral); margin-top: auto; padding-top: 8px;">peaceful-blancmange-dfd05d.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://chipper-blini-0e013c.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--coral); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">📇</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">27 jun</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Métricas de Vida</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Plantilla de dashboard para índice global y métricas diarias por área, con importación y exportación en JSON.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--coral); margin-top: auto; padding-top: 8px;">chipper-blini-0e013c.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://sunny-twilight-469f38.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--coral); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">💤</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">17 ago</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Monitor de Recuperación</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Registro diario de carga cognitiva, descanso e intensidad del tic, con tendencias e importación desde Excel/CSV.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--coral); margin-top: auto; padding-top: 8px;">sunny-twilight-469f38.netlify.app</div>
+      </a>
+
+      <a class="site-card" href="https://spiffy-biscochitos-821356.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--coral); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">🦴</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Bitácora Lumbar</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Registro diario de dolor lumbar y rigidez de pantorrilla/tobillo (escala 0–10), con calambres, notas, tendencia de 14 días y exportación JSON.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--coral); margin-top: auto; padding-top: 8px;">spiffy-biscochitos-821356.netlify.app</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- SECTION: META-SISTEMA -->
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 22px;">🧩</span>
+      <h2 style="margin: 0; font-size: 22px; font-weight: 700; color: var(--text);">Meta-sistema</h2>
+      <span style="font-size: 13px; color: var(--text-faint);">Arquitectura del vault</span>
+    </div>
+    <div class="card-row" style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 12px;">
+      <a class="site-card" href="https://frolicking-sunflower-e2e774.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--violet); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">🗺️</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Mapa Completo F2045</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Roadmap visual del Sistema Integrado v3.0 — progreso por tres dominios interconectados, navegación horizontal y detalle por paso.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--violet); margin-top: auto; padding-top: 8px;">frolicking-sunflower-e2e774.netlify.app</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- SECTION: LEGAL -->
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 22px;">⚖️</span>
+      <h2 style="margin: 0; font-size: 22px; font-weight: 700; color: var(--text);">Legal</h2>
+    </div>
+    <div class="card-row" style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 12px;">
+      <a class="site-card" href="https://bucolic-praline-951d87.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--amber); flex: 0 0 280px; width: 280px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="font-size: 24px;">🏛️</span>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px;">9 sep</span>
+        </div>
+        <div style="font-size: 17px; font-weight: 600; color: var(--text);">Monitor SCJN</div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Enlaces a los 4 sitios oficiales de la Suprema Corte para seguimiento de sentencias, listas de sesión y tesis.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--amber); margin-top: auto; padding-top: 8px;">bucolic-praline-951d87.netlify.app</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- SECTION: PRESENCIA DIGITAL -->
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 22px;">🌐</span>
+      <h2 style="margin: 0; font-size: 22px; font-weight: 700; color: var(--text);">Presencia Digital</h2>
+    </div>
+    <a class="site-card" href="https://cesarcortes-profesional.netlify.app" target="_blank" rel="noopener" style="--card-accent: var(--rose); display: flex; gap: 24px; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; max-width: 720px; flex-wrap: wrap;">
+      <span style="font-size: 36px;">🪪</span>
+      <div style="display: flex; flex-direction: column; gap: 8px; flex-grow: 1;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px;">
+          <div style="font-size: 18px; font-weight: 600; color: var(--text);">César Octavio Cortés Zúñiga — Trayectoria</div>
+          <span style="font-size: 11px; color: var(--text-faint); background: var(--surface-2); padding: 3px 10px; border-radius: 999px; white-space: nowrap;">17 abr</span>
+        </div>
+        <div style="font-size: 13.5px; color: var(--text-dim); line-height: 1.5;">Línea de tiempo dual — 13 años en gobierno, 13+ en movilidad urbana, 56,050 viajes totales. Página de trayectoria profesional.</div>
+        <div class="url-mono" style="font-size: 12px; color: var(--rose); padding-top: 4px;">cesarcortes-profesional.netlify.app</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+    <div style="font-size: 12.5px; color: var(--text-faint);">Todos los sitios son propiedad de César · alojados en Netlify</div>
+    <div style="font-size: 12.5px; color: var(--text-faint);">Panel generado — Fundación 2045</div>
+  </div>
+
+</div>
+</body>
+</html>
